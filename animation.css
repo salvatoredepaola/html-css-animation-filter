@@ -57,8 +57,8 @@
     transform: scale(0.5);
 }
 .ex-10-icon{
-    animation: rotation10 1s infinite linear;
-}
+    animation: rotation10 1s infinite linear;   /* linear= metodo di movimento, inizio lento, inizio veloce, stessa velocita ecc */
+}                                               /* infinite= il numero di volte che viene ripetuto */
 @keyframes rotation10 {
     from {
         transform: rotate(0deg);
@@ -67,11 +67,8 @@
         transform: rotate(360deg);
     }
 }
-.ex-11-icon{
-    transition: 2s;
-}
 .ex-11-icon:hover{
-    animation: rotation11 1s infinite linear;
+    animation: rotation11 2s linear;   
 }
 @keyframes rotation11 {
     0% {
@@ -85,8 +82,32 @@
     }
 }
 .ex-12-button:hover .ex-12-top-white{
-    animation: ;
+    animation: slidetop 2s linear;
+}
+@keyframes slidetop {
+    0%{
+        left: 20px;
+    }
+    50%{
+        left: 134px;
+    }
+    100%{
+        left: 20px;
+    }
+
 }
 .ex-12-button:hover .ex-12-bottom-white{
-    animation: ;
+    animation: slidebottom 2s linear;
+}
+@keyframes slidebottom{
+    0%{
+        right:40px;
+    }
+    50%{
+        right:134px;
+    }
+    100%{
+        right:40px;
+    }
+
 }
