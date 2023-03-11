@@ -56,3 +56,14 @@
     filter: saturate(2);
     transform: scale(0.5);
 }
+.ex-10-icon{
+    animation: rotation 1s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
