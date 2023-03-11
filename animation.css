@@ -82,9 +82,9 @@
     }
 }
 .ex-12-button:hover .ex-12-top-white{
-    animation: slidetop 2s linear;
+    animation: slidetop12 2s linear;
 }
-@keyframes slidetop {
+@keyframes slidetop12 {
     0%{
         left: 20px;
     }
@@ -97,9 +97,9 @@
 
 }
 .ex-12-button:hover .ex-12-bottom-white{
-    animation: slidebottom 2s linear;
+    animation: slidebottom12 2s linear;
 }
-@keyframes slidebottom{
+@keyframes slidebottom12{
     0%{
         right:40px;
     }
@@ -109,5 +109,62 @@
     100%{
         right:40px;
     }
-
+}
+.ex-13-button:hover .ex-13-top-white{
+    animation: slidetop13 2s linear;
+}
+@keyframes slidetop13{
+    0%{
+        left: 20px;
+        top: -10px;
+    }
+    25%{
+        left: 160px;
+        top: -10px;
+    }
+    40%{
+        left: 160px;
+        top: 50px;
+    }
+    75%{
+        left: 0;
+        top: 50px;
+    }
+    90%{
+        top: -10px;
+        left: -20px;
+    }
+    100%{
+        left: 20px;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: slidebottom13 2s linear;
+}
+@keyframes slidebottom13{
+    0%{
+        right:40px;
+        bottom: -10px;
+    }
+    25%{
+        right: 160px;
+        bottom: -10px;
+    }
+    40%{
+        right: 160px;
+        bottom: 50px;
+    }
+    75%{
+        right: 0;
+        bottom: 50px;
+    }
+    90%{
+        bottom: -10px;
+        right: -20px;
+    }
+    100%{
+        right: 40px;
+        bottom: -10px;
+    }
 }
